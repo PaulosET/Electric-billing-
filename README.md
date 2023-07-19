@@ -1,3 +1,7 @@
+LINk: https://ethiogem.000webhostapp.com/
+ powered by Laravel and PHP, offers a seamless online shopping experience for customers looking to explore and purchase a wide range of products. With a user-friendly interface and robust features, the website aims to provide a secure and convenient platform for both buyers and sellers.
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
