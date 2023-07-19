@@ -33,6 +33,7 @@ Route::get('/collections/{category_slug}/{product_slug}','productview');
 Route::get('/new-arrivals','newArrival');
 Route::get('/featured-products','featuredProducts');
 Route::get('/search','searchProducts');
+Route::get('/contact_us','contuctAs');
 
 });
 
@@ -53,6 +54,8 @@ Route::middleware(['auth','verified'])->group(function(){
 });
 
 Route::get('/thank-you',[App\Http\Controllers\Frontend\FrontendController::class,'thankyou']);
+Route::post('/comments',[App\Http\Controllers\Frontend\CommentController::class,'store']);
+Route::post('/delete_comment',[App\Http\Controllers\Frontend\CommentController::class,'destroy']);
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

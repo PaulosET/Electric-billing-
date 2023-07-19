@@ -35,5 +35,11 @@ return $this->hasMany(Product::class,'category_id','id')->latest();
     public function brands(){
         return $this->hasMany(Brand::class,'category_id','id')->where('status','0');
     }
+    public function comment(){
+        return $this->hasMany(Comment::class,'post_id','id');
+    }
+    /* public function user(){
+        return $this->belongsTo(User::class,'category_id','id');
+    } */
 
 };

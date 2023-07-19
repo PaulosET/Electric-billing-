@@ -13,9 +13,9 @@
                         </h5>
                     @endif
                     <div class="p-4 shadow bg-white">
-                        <h2>{{}}</h2>
+                       {{--  <h2>{{}}</h2> --}}
                         <h4>Thank you for Shopping with {{ $appSetting->website_name ?? 'website name' }}</h4>
-                        <a href="{{ url('collections') }}" class="btn btn-primary">Shop now</a>
+                        <a href="{{ url('collections') }}" class="btn btn-primary">Shop More</a>
                     </div>
 
                 </div>

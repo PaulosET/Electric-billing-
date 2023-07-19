@@ -50,8 +50,8 @@
                                     Product Image</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="colors-tab" data-bs-toggle="tab" data-bs-target="#colors-tab-pane"
-                                    type="button" role="tab">
+                                <button class="nav-link" id="colors-tab" data-bs-toggle="tab"
+                                    data-bs-target="#colors-tab-pane" type="button" role="tab">
                                     Product Color</button>
                             </li>
                         </ul>
@@ -96,7 +96,7 @@
                                 </div>
                                 <div class="mb-3">
                                     <label>Description</label>
-                                    <textarea name="description" class="form-control" rows="4">{{ $product->small_description }}</textarea>
+                                    <textarea name="description" class="form-control" rows="4">{{ $product->description }}</textarea>
                                 </div>
 
                             </div>
@@ -135,11 +135,24 @@
                                                 value="{{ $product->selling_price }}" class="form-control">
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-6">
                                         <div class="mb-3">
-                                            <label>Quantity</label>
-                                            <input type="number" name="quantity" value="{{ $product->quantity }}"
+                                            <label>Quantity / if it will be sold by quantity</label>
+                                            <input type="number" value="{{ $product->selling_price ?? '' }}"
+                                                name="quantity" class="form-control">
+                                            @error('quantity')
+                                                <small class="text-danger">{{ $message }}</small>
+                                            @enderror
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label>Weight in carat->if it will be sold by weight</label>
+                                            <input type="text" value="{{ $product->weight ?? '' }}" name="weight"
                                                 class="form-control">
+                                            @error('weight')
+                                                <small class="text-danger">{{ $message }}</small>
+                                            @enderror
                                         </div>
                                     </div>
                                     <div class="col-md-4">

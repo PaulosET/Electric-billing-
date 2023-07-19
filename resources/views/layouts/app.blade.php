@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="shortcut icon" type="x-icon" href="{{url('image\topIcon\top.png')}}">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -46,8 +46,8 @@
             @yield('content')
             <div class="whatsapp_chat">
                 <a
-                    href="https://wa.me/+919104714166?text=I'm%20interested%20and%20I%20have%20a%20few%20questions.%20Can%20you%20help?">
-                    <img src="{{ 'assets/images/whatsapp.png' }}" height="80px" width="80px"alt="whatsapp_chat">
+                    href="https://wa.me/{{$appSetting->phone1}}?text=I'm%20interested%20and%20I%20have%20a%20few%20questions.%20Can%20you%20help?">
+                    <img class="whatsapp_img" src="{{ asset('assets/images/whatsapp.png')  }}" height="80px" width="80px"alt="whatsapp_chat">
                 </a>
             </div>
 

@@ -97,9 +97,9 @@ class ProductFormRequest extends FormRequest
             ],
             'meta_description'=>[
                 'required',
-                'string'
-
-            ],
+                'string'],
+           
+            
             'image'=>[
                 'nullable'
 

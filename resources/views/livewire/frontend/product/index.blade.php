@@ -4,7 +4,7 @@
             @if ($category->brands)
                 <div class="card">
                     <div class="card-header">
-                        <h4>Brands</h4>
+                        <h4>Origin</h4>
                     </div>
                     <div class="card-body">
                         @foreach ($category->brands as $brandItem)
