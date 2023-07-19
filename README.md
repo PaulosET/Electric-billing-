@@ -1,4 +1,4 @@
-LINk: https://ethiogem.000webhostapp.com/
+LINk: https://ethiogemstone.net/
  powered by Laravel and PHP, offers a seamless online shopping experience for customers looking to explore and purchase a wide range of products. With a user-friendly interface and robust features, the website aims to provide a secure and convenient platform for both buyers and sellers.
 
 
